@@ -2,10 +2,12 @@
   "name": "hackathon2026-kartik-sapkal",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "src/index.ts",
   "scripts": {
-    "start": "node src/index.js",
-    "server": "node src/server.js",
+    "start": "tsx src/index.ts",
+    "dev": "tsx watch src/index.ts",
+    "server": "tsx src/server.ts",
+    "typecheck": "tsc --noEmit",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
@@ -18,12 +20,17 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/KARTIK5799/hackathon2026-kartik-sapkal/issues"
   },
   "homepage": "https://github.com/KARTIK5799/hackathon2026-kartik-sapkal#readme",
   "dependencies": {
     "dotenv": "^17.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3"
   }
 }
